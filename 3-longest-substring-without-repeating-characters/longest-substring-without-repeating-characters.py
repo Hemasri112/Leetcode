@@ -9,7 +9,7 @@ class Solution:
                 left+=1
             s1.add(s[right])
             ans=max(ans,len(s1))
-           
+            right+=1
         return ans
             
         
