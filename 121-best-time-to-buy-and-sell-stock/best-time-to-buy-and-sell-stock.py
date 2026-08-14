@@ -3,9 +3,7 @@ class Solution:
         minp=prices [0]
         maxp=0
         for i in range (len(prices)):
-            if prices[i]<minp:
-                minp=prices[i]
+            minp=min(minp,prices[i])
             profit =prices[i]-minp
-            if profit>maxp:
-                maxp=profit
+            maxp=max(profit,maxp)
         return maxp
